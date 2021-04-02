@@ -70,4 +70,4 @@ console.log(confirmNewLang, typeof confirmNewLang);
 let promptLoveLang = prompt('Какой твой любимый язык программированя?');
 console.log(promptLoveLang, typeof promptLoveLang);
 
-alert('Отлично! Успехов в изучении!')
+alert('Отлично! Успехов в изучении!');
