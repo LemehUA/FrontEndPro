@@ -29,15 +29,15 @@ else {
 //_____________exercise2 Сonverter________________
 let temp = -250;
 let unit = 'k';
-let K = ' ';
-let F = ' ';
-let C = ' ';
+let K = 0;
+let F = 0;
+let C = 0;
 
 switch (unit) {
     case 'k':
         K = temp,
-            C = K + 273.15,
-            F = (C * 9 / 5) + 32,
+            C = K + 273.15;
+            F = (C * 9 / 5) + 32;
             console.log('Градусов по кельвену:', K.toFixed(2), 'Градусов по цельсию:', C.toFixed(2), 'Градусов по фаренгейту:', F.toFixed(2));
         break;
     case 'f':
