@@ -64,14 +64,6 @@ console.log('Sorted from highest to lowest', fromMoreToLess);
 let student1Courses = ['Math', 'English', 'Programming'];
 let student2Courses = ['Geography', 'Spanish', 'Programming'];
 
-intersect = function(student1Courses, student2Courses) {
-    return student1Courses.filter(function(n) {
-        return student2Courses.indexOf(n) !== -1;
-    });
-};
+let studentJoint = student1Courses.concat(student2Courses);
 
-console.log(intersect(student1Courses, student2Courses));
-
-//let studentJoint = student1Courses.concat(student2Courses);
-
-//console.log(studentJoint);
+console.log(studentJoint);
