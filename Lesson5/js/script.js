@@ -72,6 +72,3 @@ intersect = function(student1Courses, student2Courses) {
 
 console.log(intersect(student1Courses, student2Courses));
 
-//let studentJoint = student1Courses.concat(student2Courses);
-
-//console.log(studentJoint);
