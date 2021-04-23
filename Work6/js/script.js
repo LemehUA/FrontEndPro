@@ -45,6 +45,14 @@ function story() {
     chapter2(kolobok, rabbit);
     chapter3(kolobok, bear);
     chapter4(kolobok, fox)
+
+    console.log(kolobok);
+    console.log(grandFa);
+    console.log(grandMa);
+    console.log(rabbit);
+    console.log(bear);
+    console.log(fox);
+
 }
 
 story();
