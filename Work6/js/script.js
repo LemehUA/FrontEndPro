@@ -1,69 +1,81 @@
+function story() {
+    let kolobok = {
+        name: 'kolobok',
+        say: function (phrase) {
+            console.log(phrase);
+        }
+    };
 
+    let grandMa = {
+        name: 'grandMa',
+        say: function (phrase) {
+            console.log(phrase);
+        }
+    };
 
-// ______________Exercise 1________________
+    let grandFa = {
+        name: 'grandFa',
+        say: function (phrase) {
+            console.log(phrase);
+        }
+    };
 
-//array filled from 1 to 1000
-let points = new Array(999);
-for (let i = 0; i <= 999; i++) {
-    points[i] = i + 1;
+    let rabbit = {
+        name: 'rabit',
+        say: function (phrase) {
+            console.log(phrase);
+        }
+    };
+
+    let bear = {
+        name: 'bear',
+        say: function (phrase) {
+            console.log(phrase);
+        }
+    };
+
+    let fox = {
+        name: 'fox',
+        say: function (phrase) {
+            console.log(phrase);
+        }
+    };
+
+    chapter1(kolobok, grandFa, grandMa);
+    chapter2(kolobok, rabbit);
+    chapter3(kolobok, bear);
+    chapter4(kolobok, fox)
 }
 
-for (let i = 0; i < points.length; i++) {
-    console.log(points[i]);
-}
+story();
 
-let array2 = points;
+function chapter1(kolobok, grandFa, grandMa) {
+    kolobok.say(`${kolobok.name}: "Hellow Grandma and Grandfa"`);
+    grandFa.say(`${grandFa.name}: "Hellow ${kolobok.name}"`);
+    grandMa.say(`${grandMa.name}: "Hellow ${kolobok.name}"`);
+    kolobok.say(`${kolobok.name}: "I'm not interested in sitting at home, I will swing into the forest"`);
 
+};
 
-// ______________Exercise 2________________
+function chapter2(kolobok, rabbit) {
+    kolobok.say(`${kolobok.name}: "Hey! Who are you?"`);
+    rabbit.say(`${rabbit.name}: "Hey! I ${rabbit.name}. And Who are you?"`);
+    kolobok.say(`${kolobok.name}: "I'm Kolobok! ${kolobok.name}!"`);
+    rabbit.say(`${rabbit.name}: "${kolobok.name}, ${kolobok.name}, I will eat you"`);
+    kolobok.say(`${kolobok.name}: "I left my Grandma, I left my Grandfa and the hare will leave you"`);
+};
 
-// Even numbers and multiples of 10
-let multipleOf_10 = array2.filter((_element) => {
-    if (_element % 2 === 0) {
-        return _element % 10 === 0;
-    }
-});
+function chapter3(kolobok, bear) {
+    kolobok.say(`${kolobok.name}: "Hey! Who are you?"`);
+    bear.say(`${bear.name}: "Hey! I ${bear.name}. And Who are you?"`);
+    kolobok.say(`${kolobok.name}: "I'm Kolobok! ${kolobok.name}!"`);
+    bear.say(`${bear.name}: "${kolobok.name}, ${kolobok.name}, I will eat you"`);
+    kolobok.say(`${kolobok.name}: I left my Grandma, I left my Grandfa, I left Rabbit and I’ll leave you"`);
+};
 
-console.log('Even numbers and multiples of 10', multipleOf_10);
-
-
-
-// Odd and multiples of 3
-let multipleOf_3 = array2.filter((_element) => {
-    if (_element % 2 !== 0) {
-        return _element % 3 === 0;
-    }
-});
-
-console.log('Odd and multiples of 3', multipleOf_3);
-
-
-
-// Odd and multiples of 5
-let multipleOf_5 = array2.filter((_element) => {
-    if (_element % 2 !== 0) {
-        return _element % 5 === 0;
-    }
-});
-
-console.log('Odd and multiples of 5', multipleOf_5);
-
-
-
-// Sorted from highest to lowest
-let fromMoreToLess = array2.sort((a, b) => {
-    return b - a;
-});
-
-console.log('Sorted from highest to lowest', fromMoreToLess);
-
-
-// ______________Exercise 3________________
-
-
-let student1Courses = ['Math', 'English', 'Programming'];
-let student2Courses = ['Geography', 'Spanish', 'Programming'];
-
-let studentJoint = student1Courses.concat(student2Courses);
-
-console.log(studentJoint);
+function chapter4(kolobok, fox) {
+    kolobok.say(`${kolobok.name}: "Hey! Who are you?"`);
+    fox.say(`${fox.name}: "I'm ${fox.name}, and I will eat you"`);
+    kolobok.say(`${kolobok.name}: "I  ${kolobok.name}! A ty kto ryzhaia bestiai!"`);
+    kolobok.say(`${kolobok.name}: I left my Grandma, I left my Grandfa, I left Rabbit and Bear and I’ll leave you!!! GOOD BY))"`);
+};
