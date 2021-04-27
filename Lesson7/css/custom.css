@@ -30,7 +30,7 @@ li {
     list-style-type: none;
 }
 
-input {
+#textBox {
     padding: 10px;
     font-size: 30px;
     border: 10px solid rgb(130, 130, 252);
@@ -40,7 +40,7 @@ input {
     color: #333;
 }
 
-a {
+#button {
     text-decoration: none;
     outline: none;
     display: inline-block;
@@ -61,9 +61,9 @@ a {
     transition: .3s;
 }
 
-a:hover {
+#button:hover {
     background: #2EE59D;
     box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
     color: white;
-    transform: scale(7px);
+    transform: scale(1.1);
 }
