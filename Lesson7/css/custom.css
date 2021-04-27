@@ -1,0 +1,69 @@
+h1 {
+    margin-top: 3%;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.messagesForm {
+    width: 389px;
+    height: 300px;
+    overflow: auto;
+    border: 10px solid rgb(130, 130, 252);
+    border-radius: 10px;
+}
+
+ul {
+    text-align: left;
+    padding-left: 5px;
+}
+
+li {
+    background-color: rgb(120, 247, 141);
+    margin: 5px 5px 5px 0px;
+    padding: 3px;
+    border-radius: 10px;
+    list-style-type: none;
+}
+
+input {
+    padding: 10px;
+    font-size: 30px;
+    border: 10px solid rgb(130, 130, 252);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .5);
+    outline: none;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: rgb(255, 247, 99);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+
+a:hover {
+    background: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+    color: white;
+    transform: scale(7px);
+}
